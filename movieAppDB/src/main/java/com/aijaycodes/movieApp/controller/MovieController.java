@@ -101,7 +101,7 @@ public class MovieController {
 	}
 	 
 	@PostMapping("/updateUser/{id}")
-	public Object updateUser(@PathVariable("id") String id,@RequestBody UserData data) {
+	public Object updateUser(@PathVariable("id") String id,@RequestBody @Valid UserData data) {
 		return service.updateUser(id,data);
 	}
 	

@@ -18,15 +18,12 @@ public class RentalData {
 	Long rentalId;
 	
 	@Column(name = "movieId")
-	@Email(message = "movie should be valid")
 	Long movieId;
 	
 	@Column(name = "userId")
-	@Email(message = "user should be valid")
 	Long userId;
 	
 	@Column(name = "date")
-	@Email(message = "date should be valid")
 	String date;
 
 	public Long getRentalId() {

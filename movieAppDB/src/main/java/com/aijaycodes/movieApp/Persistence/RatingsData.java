@@ -20,11 +20,9 @@ public class RatingsData {
 	Long ratingsId;
 	
 	@Column
-	@NotNull(message = "movieId cannot be null")
 	Long movieId;
 	
 	@Column
-	@NotNull(message = "userId cannot be null")
 	Long userId;
 	
 	@Column

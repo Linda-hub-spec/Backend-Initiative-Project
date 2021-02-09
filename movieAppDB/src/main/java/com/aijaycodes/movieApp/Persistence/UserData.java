@@ -9,6 +9,8 @@ import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
+import org.springframework.beans.factory.annotation.Value;
+
 @Entity
 @Table(name="users")
 public class UserData {
@@ -18,19 +20,19 @@ public class UserData {
 	Long userId;
 	
 	@Column
-	@NotNull(message = "Name cannot be null")
+	//@NotNull(message = "Name cannot be null")
 	String name;
 	
 	@Column
-	@Email(message = "Email should be valid")
+	@Email(message = "Email should be valid(eg. abca@gmail.com)")
 	String email;
 	
 	@Column
-	@NotNull(message = "username cannot be null")
+	//@NotNull(message = "username cannot be null")
 	String username;
 	
 	@Column
-	@NotNull(message = "password cannot be null")
+	// @NotNull(message = "password cannot be null")
 	String password;
 	
 

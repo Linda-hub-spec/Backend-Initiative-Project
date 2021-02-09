@@ -18,27 +18,21 @@ public class MovieData {
 	Long id;
 	
 	@Column(name ="title")
-	@NotNull(message = "title cannot be null")
 	String title;
 	
 	@Column(name ="year")
-	@NotNull(message = "year cannot be null")
 	String year;
 	
 	@Column(name ="	country")
-	@NotNull(message = "country cannot be null")
 	String country;
 	
 	@Column(name ="producer")
-	@NotNull(message = "producer cannot be null")
 	String producer;
 	
 	@Column(name ="genre")
-	@NotNull(message = "genre cannot be null")
 	String genre;
 	
 	@Column(name ="length")
-	@NotNull(message = "length cannot be null")
 	String length;
 
 	public Long getId() {
